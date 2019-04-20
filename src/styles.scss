@@ -1,0 +1,23 @@
+.App {
+  font-family: sans-serif;
+  ul {
+    list-style: none;
+  }
+  li {
+    position: relative;
+    display: block;
+    &:before {
+      position: relative;
+      left: -1rem;
+      top: 0;
+      display: inline-block;
+      content: "";
+      width: 0.8rem;
+      height: 0.8rem;
+      border: 1px solid black;
+    }
+    &.completed:before {
+      background-color: red;
+    }
+  }
+}
